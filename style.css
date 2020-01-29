@@ -1,483 +1,485 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Montserrat, sans-serif;
-    color: #ffffff;
-    list-style-type: none;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  color: #ffffff;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 body {
-    margin-top: 70px;
-    background-color: #260000;
+  margin-top: 70px;
+  background-color: #260000;
 }
 
 header:not(nav) {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 
 section {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 
 nav {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 60px;
-    background-color: #260000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 60px;
+  background-color: #260000;
 }
 
 #nav-logo {
-    display: block;
-    float: left;
-    height: 55px;
-    padding: 2% 0 2% 20px;   
+  display: block;
+  float: left;
+  height: 55px;
+  padding: 2% 0 2% 20px;
 }
 
 #nav-icon {
-    display: block;
-    float: right;
-    width: 50px;
-    height: 60px;
+  display: block;
+  float: right;
+  width: 50px;
+  height: 60px;
 }
 
 #nav-icon svg {
-    padding-top: 40%;
+  padding-top: 40%;
 }
 
 #checkbox {
-    display: none;
+  display: none;
 }
 
 #checkbox:checked ~ ul {
-    transition: all 0.2s;
-    right: 0;
+  transition: all 0.2s;
+  right: 0;
 }
 
 nav ul {
-    position: fixed;
-    top: 60px;
-    right: -50%;
-    width: 50%;
-    height: 100%;
-    line-height: 2.5em;
-    background-color: #260000;
-    text-align: right;
+  position: fixed;
+  top: 60px;
+  right: -50%;
+  width: 50%;
+  height: 100%;
+  line-height: 2.5em;
+  background-color: #260000;
+  text-align: right;
 }
 
-nav ul li a {    
-    padding: 0 10px;
+nav ul li a {
+  padding: 0 10px;
 }
 
-#masthead-logo, #masthead-slogan, #masthead-image {
-    display: none;
+#masthead-logo,
+#masthead-slogan,
+#masthead-image {
+  display: none;
 }
 
 .cta {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    padding: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-    background-color: #E22C3B;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #e22c3b;
 }
 
 .cta:hover {
-    background-color: #d90368;
-    transition: ease-in-out 0.25s;
+  background-color: #d90368;
+  transition: ease-in-out 0.25s;
 }
 
 .home-cta {
-    margin-bottom: 3%;
+  margin-bottom: 3%;
 }
 
 #menu-section {
-    margin-bottom: 5%;
+  margin-bottom: 5%;
 }
 
-#menu-chicken, #menu-sides, #menu-drinks {
-    display: flex;
-    flex-direction: column;
+#menu-chicken,
+#menu-sides,
+#menu-drinks {
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-images {
-    width: 100%;
-    border-radius: 5%;
+  width: 100%;
+  border-radius: 5%;
 }
 
 .menu-text {
-    font-weight: 200;
-    line-height: 1.5em;
-    padding: 3% 0 4% 0;
+  font-weight: 200;
+  line-height: 1.5em;
+  padding: 3% 0 4% 0;
 }
 
 .menu-text h1 {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 .menu-text ul {
-    display: none;
+  display: none;
 }
 
 #story-section {
-    display: flex;
-    flex-direction: column;
-    font-weight: 200;
-    line-height: 1.5em;
-    text-align: left;
-    margin-bottom: 10%;
-    /* overflow-x: hidden; */
+  display: flex;
+  flex-direction: column;
+  font-weight: 200;
+  line-height: 1.5em;
+  text-align: left;
+  margin-bottom: 10%;
 }
 
 #story-image {
-    border-radius: 5%;
-    height: 275px;
-    width: 100%;
-    object-fit: cover;
-    object-position: 40%;
+  border-radius: 5%;
+  height: 275px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 40%;
 }
 
 #reviews-stars {
-    color: yellow;
-    text-align: center;
-    font-size: 2.6em;
+  color: yellow;
+  text-align: center;
+  font-size: 2.6em;
 }
 
 #reviews-section h2 {
-    text-align: center;
-    font-weight: 500;
-    margin-bottom: 3%;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 3%;
 }
 
 #reviews-image {
-    display: none;
+  display: none;
 }
 
 #reviews-quotes {
-    line-height: 1.5em;
-    font-weight: 200;
+  line-height: 1.5em;
+  font-weight: 200;
 }
 
 #reviews-section i {
-    display: block;
-    margin-top: 1px;
-    margin-bottom: 6%;
-    font-size: 0.8em;
+  display: block;
+  margin-top: 1px;
+  margin-bottom: 6%;
+  font-size: 0.8em;
 }
 
 .reviews-cta {
-    margin-bottom: 5%;
+  margin-bottom: 5%;
 }
 
 #map-google {
-    display: block;
-    width: 100%;
-    height: 300px;
-    /* border-radius: 5%; */
-    margin-bottom: 5%;
+  display: block;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 5%;
 }
 
 footer {
-    width: 100%;
-    padding: 1%;
-    text-align: center;
-    font-size: 0.75em;
-    background-color: black;
+  width: 100%;
+  padding: 1%;
+  text-align: center;
+  font-size: 0.75em;
+  background-color: #260000;
 }
 
 @media screen and (min-width: 450px) {
-    #story-image {
-        width: 100%;
-        height: 300px;
-    }
+  #story-image {
+    width: 100%;
+    height: 300px;
+  }
 }
 
 @media screen and (min-width: 500px) {
-    #nav-logo {
-        height: 60px;
-    }
+  #nav-logo {
+    height: 60px;
+  }
 }
 
 @media screen and (min-width: 600px) {
-    #story-image {
-        height: 340px;
-    }
+  #story-image {
+    height: 340px;
+  }
 
-    #reviews-content {
-        display: flex;
-    }
+  #reviews-content {
+    display: flex;
+  }
 
-    #reviews-image {
-        display: block;
-        object-fit: cover;
-        object-position: 50%;
-        width: 47.5%;
-        height: 365px;
-        margin-right: 5%;
-        border-radius: 5%;
-    }
+  #reviews-image {
+    display: block;
+    object-fit: cover;
+    object-position: 50%;
+    width: 47.5%;
+    height: 365px;
+    margin-right: 5%;
+    border-radius: 5%;
+  }
 }
 
 @media screen and (min-width: 650px) {
-    #nav-icon {
-        display: none;
-    }
+  #nav-icon {
+    display: none;
+  }
 
-    nav ul {
-        display: block;
-        position: static;
-        margin: auto;
-        text-align: center;
-        width: 100%;
-    }
-        
-    nav ul li {
-        display: inline-block;
-        padding-top: 2%;
-        margin: 0 10px;
-    }
+  nav ul {
+    display: block;
+    position: static;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+  }
 
-    .home-cta {
-        margin-bottom: 2%;
-    }
+  nav ul li {
+    display: inline-block;
+    padding-top: 2%;
+    margin: 0 10px;
+  }
 
-    #story-content {
-        display: flex;
-    }
+  .home-cta {
+    margin-bottom: 2%;
+  }
 
-    #story-image {
-        width: 47.5%;
-        margin-right: 5%;
-        height: 360px;
-    }
+  #story-content {
+    display: flex;
+  }
 
-    #reviews-section {
-        margin-top: -5%;
-    }
+  #story-image {
+    width: 47.5%;
+    margin-right: 5%;
+    height: 360px;
+  }
 
-    #map-google {
-        height: 500px;
-    }
+  #reviews-section {
+    margin-top: -5%;
+  }
+
+  #map-google {
+    height: 500px;
+  }
 }
 
 @media screen and (min-width: 700px) {
-    #story-image {
-        height: 335px;
-    }
+  #story-image {
+    height: 335px;
+  }
 
-    #reviews-image {
-        height: 350px;
-    }
+  #reviews-image {
+    height: 350px;
+  }
 }
 
 @media screen and (min-width: 750px) {
-    body {
-        padding: 0 40px;
-        margin-top: 0;
-    }
+  body {
+    padding: 0 40px;
+    margin-top: 0;
+  }
 
-    nav {
-        position: static;
-        margin-bottom: 15px;
-    }
+  nav {
+    position: static;
+    margin-bottom: 15px;
+  }
 
-    #nav-logo {
-        display: none;  
-    }
+  #nav-logo {
+    display: none;
+  }
 
-    nav, nav ul {
-        background-color: #260000;
-    }
+  nav,
+  nav ul {
+    background-color: #260000;
+  }
 
-    nav ul li a {
-        opacity: 50%;
-    }
+  nav ul li a {
+    opacity: 50%;
+  }
 
-    nav ul li a:hover {
-        opacity: 100%;
-        transition: ease-in-out 0.25s;
-    }
+  nav ul li a:hover {
+    opacity: 100%;
+    transition: ease-in-out 0.25s;
+  }
 
-    #masthead {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
+  #masthead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
-    #masthead-text {
-        padding-top: 30px;
-    }
+  #masthead-text {
+    padding-top: 30px;
+  }
 
-    #masthead-logo {
-        display: block;
-        margin: 0 auto;
-        margin-bottom: 2.5%;
-        width: 85%;
-    }
+  #masthead-logo {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2.5%;
+    width: 85%;
+  }
 
-    #masthead-slogan {
-        display: block;
-        font-weight: 200;
-        letter-spacing: 2px;
-        text-align: center;
-        margin-bottom: 5%;
-    }
+  #masthead-slogan {
+    display: block;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 5%;
+  }
 
-    #masthead-image {
-        display: block;
-        width: 45%
-    }
+  #masthead-image {
+    display: block;
+    width: 45%;
+  }
 
-    .cta {
-        width: 45%;
-    }
+  .cta {
+    width: 45%;
+  }
 
-    .home-cta {
-        display: block;
-        width: 50%;
-        margin: 0 auto;
-    }
+  .home-cta {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
 
-    #menu-section {
-        padding: 4% 5px 35px 5px;
-        background-color: #302f21;
-        border-radius: 5%;
-    }
+  #menu-section {
+    padding: 4% 5px 35px 5px;
+    background-color: #401313;
+    border-radius: 5%;
+  }
 
-    #menu-content {
-        display: flex;
-        padding-left: 20px;
-    }
+  #menu-content {
+    display: flex;
+    padding-left: 20px;
+  }
 
-    .menu-images {
-        width: 90%;
-        padding: 0;
-        margin: 0;
-        height: 300px;
-        object-fit: cover;
-    }
+  .menu-images {
+    width: 90%;
+    padding: 0;
+    margin: 0;
+    height: 300px;
+    object-fit: cover;
+  }
 
-    .menu-text h1 {
-        padding-top: 2%;
-        margin-bottom: 2%;
-    }
+  .menu-text h1 {
+    padding-top: 2%;
+    margin-bottom: 2%;
+  }
 
-    .menu-text p {
-        display: none;
-    }
+  .menu-text p {
+    display: none;
+  }
 
-    .menu-text ul {
-        display: block;
-        margin-bottom: 0;
-        margin-bottom: 10%;
-    }
+  .menu-text ul {
+    display: block;
+    margin-bottom: 0;
+    margin-bottom: 10%;
+  }
 
-    #story-section {
-        margin-top: 10px;
-        line-height: 2em;
-    }
+  #story-section {
+    margin-top: 10px;
+    line-height: 2em;
+  }
 
-    #story-image {
-        height: 440px;
-    }
+  #story-image {
+    height: 440px;
+  }
 
-    #reviews-image {
-        height: 370px;
-    }
-    
-    footer {
-        position: static;
-        background-color: #260000;
-    }
+  #reviews-image {
+    height: 370px;
+  }
+
+  footer {
+    position: static;
+  }
 }
 
 @media screen and (min-width: 800px) {
-    #story-section p {
-        width: 50%;
-    }
+  #story-section p {
+    width: 50%;
+  }
 
-    #story-image {
-        object-position: 45% 15%;
-    }
+  #story-image {
+    object-position: 45% 15%;
+  }
 
-    #reviews-image {
-        height: 325px;
-    }
+  #reviews-image {
+    height: 325px;
+  }
 }
 
 @media screen and (min-width: 850px) {
-    #story-image {
-        height: 410px;
-    }
+  #story-image {
+    height: 410px;
+  }
 
-    #reviews-image {
-        height: 305px;
-    }
+  #reviews-image {
+    height: 305px;
+  }
 }
 
 @media screen and (min-width: 900px) {
-    #masthead {
-        padding: 0 30px;
-    }
+  #masthead {
+    padding: 0 30px;
+  }
 
-    #masthead-text {
-        padding-top: 40px;
-    }
+  #masthead-text {
+    padding-top: 40px;
+  }
 
-    #story-image {
-        height: 380px;
-    }
+  #story-image {
+    height: 380px;
+  }
 }
 
 @media screen and (min-width: 950px) {
-   #story-image {
-       height: 345px;
-   }
+  #story-image {
+    height: 345px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
-    #story-image {
-        height: 315px;
-    }
+  #story-image {
+    height: 315px;
+  }
 
-    #reviews-image {
-        height: 295px;
-    }
+  #reviews-image {
+    height: 295px;
+  }
 
-    #reviews-quotes {
-        width: 50%;
-    }
+  #reviews-quotes {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 1050px) {
-    #masthead-text {
-        padding-top: 55px;
-    }
+  #masthead-text {
+    padding-top: 55px;
+  }
 }
 
 @media screen and (min-width: 1100px) {
-    html {
-        background-color: #260000;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  html {
+    background-color: #260000;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    body {
-        width: 1100px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  body {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    #story-image {
-        height: 285px;
-    }
+  #story-image {
+    height: 285px;
+  }
 
-    #reviews-image {
-        height: 275px;
-    }
+  #reviews-image {
+    height: 275px;
+  }
 }
