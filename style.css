@@ -184,6 +184,11 @@ nav ul li a {
   margin-bottom: 5%;
 }
 
+#contact-section {
+  font-weight: lighter;
+  text-align: center;
+}
+
 footer {
   width: 100%;
   padding: 1%;
