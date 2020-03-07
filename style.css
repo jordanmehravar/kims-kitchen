@@ -1,3 +1,7 @@
+:root {
+  --bg-color: #260000;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +14,7 @@
 
 body {
   margin-top: 70px;
-  background-color: #260000;
+  background-color: var(--bg-color);
 }
 
 header:not(nav) {
@@ -27,24 +31,24 @@ nav {
   top: 0;
   left: 0;
   height: 60px;
-  background-color: #260000;
+  background-color: var(--bg-color)
 }
 
-#nav-logo {
+.nav-logo {
   display: block;
   float: left;
   height: 55px;
   padding: 2% 0 2% 20px;
 }
 
-#nav-icon {
+.nav-icon {
   display: block;
   float: right;
   width: 50px;
   height: 60px;
 }
 
-#nav-icon svg {
+.nav-icon svg {
   padding-top: 40%;
 }
 
@@ -64,17 +68,17 @@ nav ul {
   width: 50%;
   height: 100%;
   line-height: 2.5em;
-  background-color: #260000;
+  background-color: var(--bg-color);
   text-align: right;
 }
 
 nav ul li a {
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
-#masthead-logo,
-#masthead-slogan,
-#masthead-image {
+.masthead-logo,
+.masthead-slogan,
+.masthead-image {
   display: none;
 }
 
@@ -90,7 +94,7 @@ nav ul li a {
 }
 
 .cta:hover {
-  background-color: #d90368;
+  background-color: black;
   transition: ease-in-out 0.25s;
 }
 
@@ -98,13 +102,13 @@ nav ul li a {
   margin-bottom: 3%;
 }
 
-#menu-section {
+.menu-section {
   margin-bottom: 5%;
 }
 
-#menu-chicken,
-#menu-sides,
-#menu-drinks {
+.menu-chicken,
+.menu-sides,
+.menu-drinks {
   display: flex;
   flex-direction: column;
 }
@@ -128,7 +132,7 @@ nav ul li a {
   display: none;
 }
 
-#story-section {
+.story-section {
   display: flex;
   flex-direction: column;
   font-weight: 200;
@@ -137,7 +141,7 @@ nav ul li a {
   margin-bottom: 10%;
 }
 
-#story-image {
+.story-image {
   border-radius: 5%;
   height: 275px;
   width: 100%;
@@ -145,28 +149,28 @@ nav ul li a {
   object-position: 40%;
 }
 
-#reviews-stars {
+.reviews-stars {
   color: yellow;
   text-align: center;
   font-size: 2.6em;
 }
 
-#reviews-section h2 {
+.reviews-section h2 {
   text-align: center;
   font-weight: 500;
   margin-bottom: 3%;
 }
 
-#reviews-image {
+.reviews-image {
   display: none;
 }
 
-#reviews-quotes {
+.reviews-quotes {
   line-height: 1.5em;
   font-weight: 200;
 }
 
-#reviews-section i {
+.reviews-section i {
   display: block;
   margin-top: 1px;
   margin-bottom: 6%;
@@ -177,14 +181,14 @@ nav ul li a {
   margin-bottom: 5%;
 }
 
-#map-google {
+.map-google {
   display: block;
   width: 100%;
   height: 300px;
   margin-bottom: 5%;
 }
 
-#contact-section {
+.contact-section {
   font-weight: lighter;
   text-align: center;
 }
@@ -194,32 +198,42 @@ footer {
   padding: 1%;
   text-align: center;
   font-size: 0.75em;
-  background-color: #260000;
+  background-color: var(--bg-color)
+}
+
+.hide-nav-menu {
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  background-color:transparent;
 }
 
 @media screen and (min-width: 450px) {
-  #story-image {
+  .story-image {
     width: 100%;
     height: 300px;
   }
 }
 
 @media screen and (min-width: 500px) {
-  #nav-logo {
+  .nav-logo {
     height: 60px;
   }
 }
 
 @media screen and (min-width: 600px) {
-  #story-image {
+  .story-image {
     height: 340px;
   }
 
-  #reviews-content {
+  .reviews-content {
     display: flex;
   }
 
-  #reviews-image {
+  .reviews-image {
     display: block;
     object-fit: cover;
     object-position: 50%;
@@ -231,7 +245,11 @@ footer {
 }
 
 @media screen and (min-width: 650px) {
-  #nav-icon {
+  .nav-icon {
+    display: none;
+  }
+
+  .hide-nav-menu {
     display: none;
   }
 
@@ -253,31 +271,31 @@ footer {
     margin-bottom: 2%;
   }
 
-  #story-content {
+  .story-content {
     display: flex;
   }
 
-  #story-image {
+  .story-image {
     width: 47.5%;
     margin-right: 5%;
     height: 360px;
   }
 
-  #reviews-section {
+  .reviews-section {
     margin-top: -5%;
   }
 
-  #map-google {
+  .map-google {
     height: 500px;
   }
 }
 
 @media screen and (min-width: 700px) {
-  #story-image {
+  .story-image {
     height: 335px;
   }
 
-  #reviews-image {
+  .reviews-image {
     height: 350px;
   }
 }
@@ -293,13 +311,13 @@ footer {
     margin-bottom: 15px;
   }
 
-  #nav-logo {
+  .nav-logo {
     display: none;
   }
 
   nav,
   nav ul {
-    background-color: #260000;
+    background-color: var(--bg-color)
   }
 
   nav ul li a {
@@ -311,24 +329,24 @@ footer {
     transition: ease-in-out 0.25s;
   }
 
-  #masthead {
+  .masthead {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
 
-  #masthead-text {
+  .masthead-text {
     padding-top: 30px;
   }
 
-  #masthead-logo {
+  .masthead-logo {
     display: block;
     margin: 0 auto;
     margin-bottom: 2.5%;
     width: 85%;
   }
 
-  #masthead-slogan {
+  .masthead-slogan {
     display: block;
     font-weight: 200;
     letter-spacing: 2px;
@@ -336,7 +354,7 @@ footer {
     margin-bottom: 5%;
   }
 
-  #masthead-image {
+  .masthead-image {
     display: block;
     width: 45%;
   }
@@ -351,13 +369,13 @@ footer {
     margin: 0 auto;
   }
 
-  #menu-section {
+  .menu-section {
     padding: 4% 5px 35px 5px;
     background-color: #401313;
     border-radius: 5%;
   }
 
-  #menu-content {
+  .menu-content {
     display: flex;
     padding-left: 20px;
   }
@@ -385,16 +403,16 @@ footer {
     margin-bottom: 10%;
   }
 
-  #story-section {
+  .story-section {
     margin-top: 10px;
     line-height: 2em;
   }
 
-  #story-image {
+  .story-image {
     height: 440px;
   }
 
-  #reviews-image {
+  .reviews-image {
     height: 370px;
   }
 
@@ -404,72 +422,72 @@ footer {
 }
 
 @media screen and (min-width: 800px) {
-  #story-section p {
+  .story-section p {
     width: 50%;
   }
 
-  #story-image {
+  .story-image {
     object-position: 45% 15%;
   }
 
-  #reviews-image {
+  .reviews-image {
     height: 325px;
   }
 }
 
 @media screen and (min-width: 850px) {
-  #story-image {
+  .story-image {
     height: 410px;
   }
 
-  #reviews-image {
+  .reviews-image {
     height: 305px;
   }
 }
 
 @media screen and (min-width: 900px) {
-  #masthead {
+  .masthead {
     padding: 0 30px;
   }
 
-  #masthead-text {
+  .masthead-text {
     padding-top: 40px;
   }
 
-  #story-image {
+  .story-image {
     height: 380px;
   }
 }
 
 @media screen and (min-width: 950px) {
-  #story-image {
+  .story-image {
     height: 345px;
   }
 }
 
 @media screen and (min-width: 1000px) {
-  #story-image {
+  .story-image {
     height: 315px;
   }
 
-  #reviews-image {
+  .reviews-image {
     height: 295px;
   }
 
-  #reviews-quotes {
+  .reviews-quotes {
     width: 50%;
   }
 }
 
 @media screen and (min-width: 1050px) {
-  #masthead-text {
+  .masthead-text {
     padding-top: 55px;
   }
 }
 
 @media screen and (min-width: 1100px) {
   html {
-    background-color: #260000;
+    background-color: var(--bg-color);
     margin-left: auto;
     margin-right: auto;
   }
@@ -480,11 +498,11 @@ footer {
     margin-right: auto;
   }
 
-  #story-image {
+  .story-image {
     height: 285px;
   }
 
-  #reviews-image {
+  .reviews-image {
     height: 275px;
   }
 }
